@@ -43,6 +43,8 @@ gem 'bcrypt'
 # Manage ENV vars
 gem 'figaro'
 
+gem 'httparty'
+
 group :development, :test do
 
   # Use rspec for testing!

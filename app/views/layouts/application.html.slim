@@ -5,7 +5,9 @@ html
       = yield(:title) 
       |  | #{Rails.application.class.parent_name}
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    link href='//cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css' rel='stylesheet' type='text/css'
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    script src='//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js'
     = csrf_meta_tags
 
   body

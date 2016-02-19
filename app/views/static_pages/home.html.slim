@@ -1,3 +1,26 @@
 -provide(:title, "Home")
 
-h1 Hello, world.
+javascript:
+  $(document).ready(function(){
+      $('#dataTable').DataTable();
+  });
+
+table#dataTable
+  thead
+    tr
+      td Name
+      td Email
+      td Organization
+      td Event Code
+
+  tbody
+    -@sign_ins.each do |sign_in|
+      tr
+        td 
+          = sign_in['name']
+        td
+          = sign_in['email']
+        td
+          = sign_in['organization']
+        td
+          = sign_in['eventcode']

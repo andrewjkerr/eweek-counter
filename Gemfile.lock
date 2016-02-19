@@ -119,6 +119,9 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hetchy (1.0.0)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jquery-rails (4.1.0)
       rails-dom-testing (~> 1.0)
@@ -148,6 +151,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
+    multi_xml (0.5.5)
     multipart-post (2.0.0)
     neat (1.7.2)
       bourbon (>= 4.0)
@@ -250,6 +254,7 @@ DEPENDENCIES
   factory_girl_rails
   faker
   figaro
+  httparty
   jquery-rails
   jquery-turbolinks
   librato-rails
