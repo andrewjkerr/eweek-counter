@@ -1,0 +1,21 @@
+-provide(:title, "Count")
+
+
+javascript:
+  $(document).ready(function(){
+      $('#dataTable').DataTable();
+  });
+
+table#dataTable
+  thead
+    tr
+      td Org name
+      td Count
+
+  tbody
+    - @org_count.each do |key, value|
+      tr
+        td
+          = key
+        td
+          = value
