@@ -16,8 +16,7 @@ class StaticPagesController < ApplicationController
       @org_count[sign_in['organization']] ||= 0
       @org_count[sign_in['organization']] += 1
     end
-    @org_count['ACM'] = @org_count['ACM'] + @org_count['Other']
-    @org_count['Other'] = nil
+    @org_count['ACM'] = @org_count['FLEG'] + 1
     @org_count
   end
 end
